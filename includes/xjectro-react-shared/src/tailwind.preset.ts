@@ -1,0 +1,123 @@
+import animate from "tailwindcss-animate";
+import { posix as path } from "path";
+
+const preset = {
+  content: [
+    "../../react/dist/components/**/*.{js,cjs,mjs,ts,jsx,tsx}",
+    "../../react/dist/hooks/**/*.{js,cjs,mjs,ts}",
+    "../../react/dist/lib/**/*.{js,cjs,mjs,ts}",
+    "../../react/dist/utils/**/*.{js,cjs,mjs,ts}",
+    "../../shared/dist/**/*.{js,cjs,mjs,ts}",
+  ].map((pattern) => path.join(__dirname, pattern)),
+  theme: {
+    extend: {
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        shine: {
+          "0%": { backgroundPosition: "200% center" },
+          "100%": { backgroundPosition: "-200% center" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        shine: "shine 2s linear infinite",
+      },
+      borderRadius: {
+        sm: "calc(var(--radius) - 4px)",
+        md: "calc(var(--radius) - 2px)",
+        lg: "var(--radius)",
+        xl: "calc(var(--radius) + 4px)",
+      },
+      colors: {
+        chart: {
+          1: "oklch(var(--chart-1))",
+          2: "oklch(var(--chart-2))",
+          3: "oklch(var(--chart-3))",
+          4: "oklch(var(--chart-4))",
+          5: "oklch(var(--chart-5))",
+        },
+        typography: {
+          50: "oklch(var(--typography-50))",
+          100: "oklch(var(--typography-100))",
+          200: "oklch(var(--typography-200))",
+          300: "oklch(var(--typography-300))",
+          400: "oklch(var(--typography-400))",
+          500: "oklch(var(--typography-500))",
+          600: "oklch(var(--typography-600))",
+          700: "oklch(var(--typography-700))",
+          800: "oklch(var(--typography-800))",
+          900: "oklch(var(--typography-900))",
+          950: "oklch(var(--typography-950))",
+          foreground: "oklch(var(--typography-foreground))",
+        },
+        surface: {
+          50: "oklch(var(--surface-50))",
+          100: "oklch(var(--surface-100))",
+          200: "oklch(var(--surface-200))",
+          300: "oklch(var(--surface-300))",
+          400: "oklch(var(--surface-400))",
+          500: "oklch(var(--surface-500))",
+          600: "oklch(var(--surface-600))",
+          700: "oklch(var(--surface-700))",
+          800: "oklch(var(--surface-800))",
+          900: "oklch(var(--surface-900))",
+          950: "oklch(var(--surface-950))",
+          foreground: "oklch(var(--surface-foreground))",
+        },
+        ghost: {
+          50: "oklch(var(--surface-50) / 0.6)",
+          100: "oklch(var(--surface-100) / 0.6)",
+          200: "oklch(var(--surface-200) / 0.6)",
+          300: "oklch(var(--surface-300) / 0.6)",
+          400: "oklch(var(--surface-400) / 0.6)",
+          500: "oklch(var(--surface-500) / 0.6)",
+          600: "oklch(var(--surface-600) / 0.6)",
+          700: "oklch(var(--surface-700) / 0.6)",
+          800: "oklch(var(--surface-800) / 0.6)",
+          900: "oklch(var(--surface-900) / 0.6)",
+          950: "oklch(var(--surface-950) / 0.6)",
+          foreground: "oklch(var(--typography-50))",
+        },
+        primary: {
+          50: "oklch(var(--primary-50))",
+          100: "oklch(var(--primary-100))",
+          200: "oklch(var(--primary-200))",
+          300: "oklch(var(--primary-300))",
+          400: "oklch(var(--primary-400))",
+          500: "oklch(var(--primary-500))",
+          600: "oklch(var(--primary-600))",
+          700: "oklch(var(--primary-700))",
+          800: "oklch(var(--primary-800))",
+          900: "oklch(var(--primary-900))",
+          950: "oklch(var(--primary-950))",
+          foreground: "oklch(var(--primary-foreground))",
+        },
+        danger: {
+          50: "oklch(var(--danger-50))",
+          100: "oklch(var(--danger-100))",
+          200: "oklch(var(--danger-200))",
+          300: "oklch(var(--danger-300))",
+          400: "oklch(var(--danger-400))",
+          500: "oklch(var(--danger-500))",
+          600: "oklch(var(--danger-600))",
+          700: "oklch(var(--danger-700))",
+          800: "oklch(var(--danger-800))",
+          900: "oklch(var(--danger-900))",
+          950: "oklch(var(--danger-950))",
+          foreground: "oklch(var(--danger-foreground))",
+        },
+      },
+    },
+  },
+  plugins: [animate],
+};
+
+export default preset;

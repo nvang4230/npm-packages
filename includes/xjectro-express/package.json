@@ -1,0 +1,73 @@
+{
+  "name": "@xjectro/express",
+  "private": false,
+  "version": "1.0.113",
+  "author": "xjectro",
+  "license": "MIT",
+  "type": "module",
+  "description": "A Node.js package providing an Express.js server core and helper tools, compatible with both ESM and CommonJS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xjectro/npm-packages.git"
+  },
+  "homepage": "https://github.com/Xjectro/npm-packages#readme",
+  "bugs": {
+    "url": "https://github.com/Xjectro/npm-packages/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "release": "npm version patch && npm publish"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./handlers": {
+      "types": "./dist/handlers/index.d.ts",
+      "import": "./dist/handlers/index.mjs",
+      "require": "./dist/handlers/index.cjs"
+    },
+    "./exceptions": {
+      "types": "./dist/exceptions/index.d.ts",
+      "import": "./dist/exceptions/index.mjs",
+      "require": "./dist/exceptions/index.cjs"
+    },
+    "./middleware/*": {
+      "types": "./dist/middleware/*.d.ts",
+      "import": "./dist/middleware/*.mjs",
+      "require": "./dist/middleware/*.cjs"
+    },
+    "./response": {
+      "types": "./dist/response/index.d.ts",
+      "import": "./dist/response/index.mjs",
+      "require": "./dist/response/index.cjs"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.mjs",
+      "require": "./dist/types/index.cjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "morgan": "^1.10.0",
+    "strict-event-emitter": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/express-session": "^1.18.1",
+    "@types/morgan": "^1.9.9"
+  }
+}

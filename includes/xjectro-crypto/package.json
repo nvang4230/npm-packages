@@ -1,0 +1,36 @@
+{
+  "name": "@xjectro/crypto",
+  "private": false,
+  "version": "1.0.110",
+  "author": "xjectro",
+  "license": "MIT",
+  "type": "module",
+  "description": "A lightweight cryptography utility package for generating secure hashes and unique identifiers in your JavaScript/TypeScript applications.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xjectro/npm-packages.git"
+  },
+  "homepage": "https://github.com/Xjectro/npm-packages#readme",
+  "bugs": {
+    "url": "https://github.com/Xjectro/npm-packages/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "release": "npm version patch && npm publish"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}

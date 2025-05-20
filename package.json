@@ -1,0 +1,29 @@
+{
+  "name": "npm-packages",
+  "private": true,
+  "author": "Xjectro",
+  "scripts": {
+    "dev": "turbo run dev",
+    "start": "turbo start",
+    "release": "pnpm run build && turbo run release",
+    "lint": "turbo lint",
+    "build": "tsup --config tsup.config.ts",
+    "format": "prettier --write \"**/*.{ts,md,json,tsx,mjs,css}\"",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "dotenv-cli": "^8.0.0",
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.0",
+    "typescript": "5.8.2"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "tsup": "^8.5.0"
+  }
+}

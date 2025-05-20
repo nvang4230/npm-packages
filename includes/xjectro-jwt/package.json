@@ -1,0 +1,38 @@
+{
+  "name": "@xjectro/jwt",
+  "private": false,
+  "version": "1.0.8",
+  "author": "xjectro",
+  "type": "module",
+  "license": "MIT",
+  "description": "A lightweight wrapper around JSON Web Tokens (JWT) for easy token generation and verification in Node.js applications.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xjectro/npm-packages.git"
+  },
+  "homepage": "https://github.com/Xjectro/npm-packages#readme",
+  "bugs": {
+    "url": "https://github.com/Xjectro/npm-packages/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "release": "npm version patch && npm publish"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/uuid": "^10.0.0",
+    "jsonwebtoken": "^9.0.0"
+  }
+}

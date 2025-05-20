@@ -1,0 +1,24 @@
+"use client";
+
+import { Toaster as Sonner } from "sonner";
+
+type SonnerToasterProps = React.ComponentProps<typeof Sonner>;
+
+const Toaster = (props: SonnerToasterProps) => {
+  return (
+    <Sonner
+      className="toaster group cursor-grab"
+      style={
+        {
+          "--normal-bg": "var(--surface-100)",
+          "--normal-text": "var(--typography-50)",
+          "--normal-border": "var(--surface-500)",
+        } as React.CSSProperties
+      }
+      {...props}
+    />
+  );
+};
+
+export { Toaster };
+export type { SonnerToasterProps as ToasterProps };
